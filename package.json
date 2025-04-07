@@ -1,0 +1,17 @@
+{
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "monorepo-work-space/*"
+  ],
+  "scripts": {
+    "dev:ui": "pnpm --filter ui-components dev",
+    "dev:web": "pnpm --filter web-app dev",
+    "build": "pnpm --filter \"*\" build",
+    "test": "pnpm --filter \"*\" test"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
