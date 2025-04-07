@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
+  base: '/monorepo-cicd/', // 添加 base 配置，指向您的 GitHub 仓库名
   plugins: [react()],
   server: {
     port: 3000,
